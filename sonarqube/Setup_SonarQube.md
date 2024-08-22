@@ -8,7 +8,7 @@ Source: https://docs.sonarqube.org/latest/requirements/requirements/
 1. Java 11 installation   
    ```sh 
    amazon-linux-extras list
-   amazon-linux-extras install java-openjdk11
+   amazon-linux-extras install java-openjdk17
    ```
 1. SonarQube cannot be run as root on Unix-based systems, so create a dedicated user account for SonarQube if necessary.
 
@@ -19,6 +19,7 @@ Source: https://docs.sonarqube.org/latest/requirements/requirements/
    cd /opt  
    wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-x.x.zip  
    ```
+   Note: sonarqube 9.9 is only support java 17
 1. extract packages
    ```sh 
    unzip /opt/sonarqube-x.x.zip
